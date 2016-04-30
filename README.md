@@ -10,6 +10,7 @@ lein new app learn-clojure
 Remote repository
 <code>
 git init
+git add -all
 git commit -m "first commit"
 git remote add origin git@github.com:7khedge/learn-clojure.git
 git push -u origin master
