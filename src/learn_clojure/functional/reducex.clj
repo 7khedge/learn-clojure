@@ -24,3 +24,6 @@
         {:human 4.1
          :critter 3.9})
 ; => {:human 4.1}
+
+;; For further example on how to use reduce and a implementation
+;; see chap3 execrcise.

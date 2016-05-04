@@ -78,7 +78,6 @@
 (map titleize #{"Elbows" "Soap Carving"})
 ; => ("Elbows for the Brave and True" "Soap Carving for the Brave and True")
 
-
 ;;map on a map
 ;; why is second used
 (map #(titleize (second %)) {:uncomfortable-thing "Winking"})
@@ -93,7 +92,6 @@
 ;; (list (str "a" "A") (str "b" "B") (str "c" "C"))
 (map str ["a" "b" "c"] ["A" "B" "C"])
 ; => ("aA" "bB" "cC")
-
 
 ;;using the above behaviour we can do the following
 (def human-consumption   [8.1 7.3 6.6 5.0])
@@ -123,12 +121,12 @@
 (stats [80 1 44 13 6])
 ; => (144 5 144/5)
 
-
 (def identities
   [{:alias "Batman" :real "Bruce Wayne"}
    {:alias "Spider-Man" :real "Peter Parker"}
    {:alias "Santa" :real "Your mom"}
    {:alias "Easter Bunny" :real "Your dad"}])
 
+;; Using a keyword as a function to extra/lookup a value from the map
 (map :real identities)
 ; => ("Bruce Wayne" "Peter Parker" "Your mom" "Your dad")
