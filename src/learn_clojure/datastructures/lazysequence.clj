@@ -74,3 +74,9 @@
 
 (take 10 (even-numbers))
 ; => (0 2 4 6 8 10 12 14 16 18)
+
+;; cons returns a new list with element appends to the begininng of a list
+;; This is called cosing to a fully realised list
+;; even numbers cosines to a lazy sequence , which a receipe for the next element
+(cons 0 '(2 4 6))
+; => (0 2 4 6)

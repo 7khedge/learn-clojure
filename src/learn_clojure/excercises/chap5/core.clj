@@ -1,4 +1,4 @@
-(ns learn-clojure.functional.pegthing.core
+(ns learn-clojure.excercises.chap5
   ;; import functions to be used
   (require [clojure.set :as set])
   ;;Allows namespace to be run from the command line

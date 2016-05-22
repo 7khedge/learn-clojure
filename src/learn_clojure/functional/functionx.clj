@@ -60,16 +60,16 @@
   (str "Two parameters! That's nothing! Pah! I will smoosh them "
        "together to spite you! " x y))
 
-(defn multi-arity
-  ;; 3-arity arguments and body
-  ([first-arg second-arg third-arg]
-   (do-things first-arg second-arg third-arg))
-  ;; 2-arity arguments and body
-  ([first-arg second-arg]
-   (do-things first-arg second-arg))
-  ;; 1-arity arguments and body
-  ([first-arg]
-   (do-things first-arg)))
+;(defn multi-arity
+;  ;; 3-arity arguments and body
+;  ([first-arg second-arg third-arg]
+;   (do-things first-arg second-arg third-arg))
+;  ;; 2-arity arguments and body
+;  ([first-arg second-arg]
+;   (do-things first-arg second-arg))
+;  ;; 1-arity arguments and body
+;  ([first-arg]
+;   (do-things first-arg)))
 
 
 ;; Using arity to provide a default value for an argument
@@ -128,7 +128,7 @@
                 "Here they are in case you need to cry over them: "
                 (clojure.string/join ", " unimportant-choices))))
 
-(chooser ["Marmalade", "Handsome Jack", "Pigpen", "Aquaman"])
+;(chooser ["Marmalade", "Handsome Jack", "Pigpen", "Aquaman"])
 ; => Your first choice is: Marmalade
 ; => Your second choice is: Handsome Jack
 ; => We're ignoring the rest of your choices. Here they are in case \
@@ -140,7 +140,7 @@
   (println (str "Treasure lat: " lat))
   (println (str "Treasure lng: " lng)))
 
-(announce-treasure-location {:lat 28.22 :lng 81.33})
+;(announce-treasure-location {:lat 28.22 :lng 81.33})
 ; => Treasure lat: 100
 ; => Treasure lng: 50
 
@@ -180,8 +180,8 @@
 
 
 ;; Anonymous functions
-(fn [param-list]
-  function body)
+;(fn [param-list]
+;  function body)
 
 (map (fn [name] (str "Hi, " name))
      ["Darth Vader" "Mr. Magoo"])
@@ -239,3 +239,4 @@
 ;; then using the configured function
 (inc3 7)
 ; => 10
+
