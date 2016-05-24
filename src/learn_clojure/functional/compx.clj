@@ -1,4 +1,4 @@
-(ns learn-clojure.functional.higherOrderFunctions)
+(ns learn-clojure.functional.compx)
 
 
 ;; Compose function
@@ -38,6 +38,9 @@
 ; combines four functions
 (def spell-slots-comp (comp int inc #(/ % 2) c-int))
 
+;(spell-slots-comp character)
+;=> 6
+
 ;(c-int character)
 ;=> 10
 ;(#(/ % 2) 10)
@@ -46,3 +49,13 @@
 ;=> 6
 ;(int 6)
 ;=> 6
+
+(defn two-comp
+  [f g]
+  (fn [& args]
+    (f (apply g args))))
+
+(def incplus (two-comp inc +))
+
+;(incplus 3 4)
+;=> 8
